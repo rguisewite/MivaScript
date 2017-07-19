@@ -7,7 +7,7 @@
 	<key>gutterSettings</key>
 	<dict>
 		<key>background</key>
-		<string>#49483E</string>
+		<string>#370827</string>
 		<key>divider</key>
 		<string>#75715E</string>
 		<key>foreground</key>
@@ -23,15 +23,17 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#272822</string>
+				<string>#370827</string>
 				<key>caret</key>
 				<string>#F8F8F0</string>
+				<key>findHighlight</key>
+				<string>#ffff00</string>
 				<key>foreground</key>
 				<string>#F8F8F2</string>
 				<key>invisibles</key>
 				<string>#49483E</string>
 				<key>lineHighlight</key>
-				<string>#49483E</string>
+				<string>#00000025</string>
 				<key>selection</key>
 				<string>#49483E</string>
 			</dict>
@@ -44,7 +46,130 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#077817</string>
+				<string>#999</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JS Variable</string>
+			<key>scope</key>
+			<string>variable.language.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#20879c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JavaScript self</string>
+			<key>scope</key>
+			<string>variable.language.self.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c59d17</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JavaScript this</string>
+			<key>scope</key>
+			<string>variable.language.this.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#20879c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JavaScript function local</string>
+			<key>scope</key>
+			<string>meta.function-call.method</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#66D9EF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JavaScript function</string>
+			<key>scope</key>
+			<string>variable.function.constructor.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#66D9EF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JavaScript function</string>
+			<key>scope</key>
+			<string>variable.function.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#66D9EF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JavaScript function class</string>
+			<key>scope</key>
+			<string>entity.name.class.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffffff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JavaScript function prototype</string>
+			<key>scope</key>
+			<string>variable.language.prototype.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffffff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JavaScript function braces</string>
+			<key>scope</key>
+			<string>meta.group.braces.round.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffffff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Invalid</string>
+			<key>scope</key>
+			<string>mivascript.invalid_formatting.space</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#ffff00</string>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Operators</string>
+			<key>scope</key>
+			<string>keyword.operator</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CF6A4C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -55,7 +180,29 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#E6DB74</string>
+				<string>#fff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SingleString</string>
+			<key>scope</key>
+			<string>mivascript.expression.container</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c59d17</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>MivaString</string>
+			<key>scope</key>
+			<string>mivascript.expression.singlequote</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c59d17</string>
 			</dict>
 		</dict>
 		<dict>
@@ -66,7 +213,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#AE81FF</string>
+				<string>#20879c</string>
 			</dict>
 		</dict>
 		<dict>
@@ -88,7 +235,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#AE81FF</string>
+				<string>#20879c</string>
 			</dict>
 		</dict>
 		<dict>
@@ -175,7 +322,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#A6E22E</string>
+				<string>#F92672</string>
 			</dict>
 		</dict>
 		<dict>
@@ -201,7 +348,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#F92672</string>
+				<string>#20879c</string>
 			</dict>
 		</dict>
 		<dict>
@@ -212,7 +359,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6E22E</string>
+				<string>#478f00</string>
 			</dict>
 		</dict>
 		<dict>
@@ -226,6 +373,19 @@
 				<string></string>
 				<key>foreground</key>
 				<string>#66D9EF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Library function</string>
+			<key>scope</key>
+			<string>support.function.event-handler.js</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#ffffff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -269,26 +429,65 @@
 			<key>name</key>
 			<string>MvFunction</string>
 			<key>scope</key>
-			<string>storage.type.function.mivascript</string>
+			<string>mivascript.function</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#CC2121</string>
+				<string>#20879c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>MvTAG</string>
+			<key>scope</key>
+			<string>keyword.control</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#c59d17</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>MvTAG</string>
+			<key>scope</key>
+			<string>keyword.control.mivascript</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#20879c</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>MvDO</string>
 			<key>scope</key>
-			<string>mvdo.mivascript</string>
+			<string>mivascript.mvdo</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
 				<string>#8aa2fd</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>MvDO</string>
+			<key>scope</key>
+			<string>errorcodes</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#FAFA02</string>
 			</dict>
 		</dict>
 	</array>

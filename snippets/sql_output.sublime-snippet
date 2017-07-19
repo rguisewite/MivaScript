@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+<MvCOMMENT>
+|
+| START SQL DEBUG
+|
+</MvCOMMENT>
+
+<MvASSIGN NAME = "l.tmp_sql" VALUE = "{ ${1:l.sql} }">
+<MvFOREACH ITERATOR = "l.field" ARRAY = "l.fieldlist" COUNT = "{ miva_splitstring( ${2:l.fields}, ',', l.fieldlist, 'trim' ) }">
+	<MvASSIGN NAME = "l.tmp_pos" VALUE = "{ indexof( '?', l.tmp_sql, 1 ) }">
+
+	<MvIF EXPR = "{ NOT l.tmp_pos }">
+		<MvFOREACHSTOP>
+	</MvIF>
+
+	<MvASSIGN NAME = "l.tmp_sql" VALUE = "{ substring_var( l.tmp_sql, 1, l.tmp_pos - 1 ) \$ '\'' \$ miva_variable_value( l.field ) \$ '\'' \$ substring_var( l.tmp_sql, l.tmp_pos + 1, len_var( l.tmp_sql ) - l.tmp_pos + 1 ) }">
+</MvFOREACH>
+<MvEXPORT FILE = "test.log" FIELDS = "l.tmp_sql" DELIMITER = "">
+
+<MvFOREACH ITERATOR = "l.line" ARRAY = "l.lines" COUNT = "{ miva_splitstring( l.tmp_sql, asciichar( 10 ), l.lines, '' ) }">
+	<MvEXPORT FILE = "test.log" FIELDS = "l.line" DELIMITER = "">
+</MvFOREACH>
+
+<MvCOMMENT>
+|
+| END SQL DEBUG
+|
+</MvCOMMENT>]]></content>
+	<tabTrigger>sql_output</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

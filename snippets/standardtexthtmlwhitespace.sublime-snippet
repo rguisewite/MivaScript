@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<MIVA STANDARDOUTPUTLEVEL = "text, html, whitespace">]]></content>
+    <tabTrigger>standardtexhhtmlwhitespace</tabTrigger>
+    <scope>source.mivascript</scope>
+</snippet>

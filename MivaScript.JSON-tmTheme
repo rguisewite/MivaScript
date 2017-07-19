@@ -1,7 +1,7 @@
 {
     "colorSpaceName": "sRGB",
     "gutterSettings": {
-        "background": "#49483E",
+        "background": "#370827",
         "divider": "#75715E",
         "foreground": "#75715E"
     },
@@ -10,11 +10,12 @@
     "settings": [
         {
             "settings": {
-                "background": "#272822",
+                "background": "#370827",
                 "caret": "#F8F8F0",
                 "foreground": "#F8F8F2",
                 "invisibles": "#49483E",
-                "lineHighlight": "#49483E",
+                "lineHighlight": "#00000025", /*270017*/
+                "findHighlight": "#ffff00",
                 "selection": "#49483E"
             }
         },
@@ -22,21 +23,113 @@
             "name": "Comment",
             "scope": "comment",
             "settings": {
-                "foreground": "#077817"
+                "foreground": "#999"
+            }
+        },
+        {
+            "name": "JS Variable",
+            "scope": "variable.language.js",
+            "settings": {
+                "foreground": "#20879c"
+            }
+        },
+        {
+            "name": "JavaScript self",
+            "scope": "variable.language.self.js",
+            "settings": {
+                "foreground": "#c59d17"
+            }
+        },
+        {
+            "name": "JavaScript this",
+            "scope": "variable.language.this.js",
+            "settings": {
+                "foreground": "#20879c"
+            }
+        },
+        {
+            "name": "JavaScript function local",
+            "scope": "meta.function-call.method",
+            "settings": {
+                "foreground": "#66D9EF"
+            }
+        },
+        {
+            "name": "JavaScript function",
+            "scope": "variable.function.constructor.js",
+            "settings": {
+                "foreground": "#66D9EF"
+            }
+        },
+        {
+            "name": "JavaScript function",
+            "scope": "variable.function.js",
+            "settings": {
+                "foreground": "#66D9EF"
+            }
+        },
+        {
+            "name": "JavaScript function class",
+            "scope": "entity.name.class.js",
+            "settings": {
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "name": "JavaScript function prototype",
+            "scope": "variable.language.prototype.js",
+            "settings": {
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "name": "JavaScript function braces",
+            "scope": "meta.group.braces.round.function",
+            "settings": {
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "name": "Invalid",
+            "scope": "mivascript.invalid_formatting.space",
+            "settings": {
+                "foreground": "#000000",
+                "background": "#ffff00"
+            }
+        },
+        {
+            "name": "Operators",
+            "scope": "keyword.operator",
+            "settings": {
+                "foreground": "#CF6A4C"
             }
         },
         {
             "name": "String",
             "scope": "string",
             "settings": {
-                "foreground": "#E6DB74"
+                "foreground": "#fff"
+            }
+        },
+        {
+            "name": "SingleString",
+            "scope": "mivascript.expression.container",
+            "settings": {
+                "foreground": "#c59d17"
+            }
+        },
+        {
+            "name": "MivaString",
+            "scope": "mivascript.expression.singlequote",
+            "settings": {
+                "foreground": "#c59d17"
             }
         },
         {
             "name": "Number",
             "scope": "constant.numeric",
             "settings": {
-                "foreground": "#AE81FF"
+                "foreground": "#20879c"
             }
         },
         {
@@ -50,7 +143,7 @@
             "name": "User-defined constant",
             "scope": "constant.character, constant.other",
             "settings": {
-                "foreground": "#AE81FF"
+                "foreground": "#20879c"
             }
         },
         {
@@ -104,7 +197,7 @@
             "scope": "entity.name.function",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#A6E22E"
+                "foreground": "#F92672"
             }
         },
         {
@@ -120,14 +213,14 @@
             "scope": "entity.name.tag",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#F92672"
+                "foreground": "#20879c"
             }
         },
         {
             "name": "Tag attribute",
             "scope": "entity.other.attribute-name",
             "settings": {
-                "foreground": "#A6E22E"
+                "foreground": "#478f00"
             }
         },
         {
@@ -136,6 +229,14 @@
             "settings": {
                 "fontStyle": "",
                 "foreground": "#66D9EF"
+            }
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function.event-handler.js",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#ffffff"
             }
         },
         {
@@ -163,18 +264,42 @@
         },
         {
             "name": "MvFunction",
-            "scope": "storage.type.function.mivascript",
+            "scope": "mivascript.function",
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#CC2121"
+                "foreground": "#20879c"
+            }
+        },
+        {
+            "name": "MvTAG",
+            "scope": "keyword.control",
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#c59d17"
+            }
+        },
+        {
+            "name": "MvTAG",
+            "scope": "keyword.control.mivascript",
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#20879c"
             }
         },
         {
             "name": "MvDO",
-            "scope": "mvdo.mivascript",
+            "scope": "mivascript.mvdo",
             "settings": {
                 "fontStyle": "",
                 "foreground": "#8aa2fd"
+            }
+        },
+        {
+            "name": "MvDO",
+            "scope": "errorcodes",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#FAFA02"
             }
         }
     ],
